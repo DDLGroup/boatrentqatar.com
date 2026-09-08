@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Boat Rent Qatar Dhow • We Are Setting Sail Soon</title>
+  <meta name="description" content="Boat Rent Qatar Dhow - Premier luxury cruise and dhow boat rentals in Doha, Qatar. Site currently undergoing upgrades. Launching in 7 days." />
+  
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23D4AF37'><path d='M3 13.5L12 3l9 10.5-2 1.5H5l-2-1.5zM2 17h20l-3 4H5l-3-4z'/></svg>" />
+  
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Import Map for Standalone & CDN Fallback -->
+
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+  <script type="module" crossorigin src="./assets/index-DEQrffCj.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C0JKA6_h.css">
+</head>
+<body>
+  <!-- WebGL 3D Canvas Layer -->
+  <div id="webgl-container">
+    <canvas id="three-canvas"></canvas>
+  </div>
+
+  <!-- Cinematic 3D Intro Opening Overlay -->
+  <div id="intro-overlay" class="intro-overlay">
+    <div class="intro-backdrop"></div>
+    <div class="intro-center">
+      <!-- 3D Holographic Compass & Dhow Crest -->
+      <div class="intro-crest">
+        <div class="compass-ring compass-outer"></div>
+        <div class="compass-ring compass-inner"></div>
+        <div class="crest-icon">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="crest-svg">
+            <defs>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFF3C4" />
+                <stop offset="50%" stop-color="#D4AF37" />
+                <stop offset="100%" stop-color="#996515" />
+              </linearGradient>
+              <linearGradient id="qatarMaroon" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8A1538" />
+                <stop offset="100%" stop-color="#4A0018" />
+              </linearGradient>
+            </defs>
+            <!-- Dhow Sails -->
+            <path d="M50 12 C52 28 66 42 76 46 C60 48 52 44 50 12 Z" fill="url(#goldGrad)" opacity="0.9" />
+            <path d="M47 16 C45 32 30 46 18 48 C34 50 44 44 47 16 Z" fill="url(#goldGrad)" opacity="0.75" />
+            <!-- Dhow Hull with Traditional Arabian Curve -->
+            <path d="M12 52 C30 52 70 52 88 52 C78 68 58 74 50 74 C42 74 22 68 12 52 Z" fill="url(#goldGrad)" />
+            <path d="M16 55 C34 55 66 55 84 55 C74 67 56 71 50 71 C44 71 26 67 16 55 Z" fill="url(#qatarMaroon)" />
+            <!-- Waves -->
+            <path d="M8 78 C20 74 30 82 50 78 C70 74 80 82 92 78" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M16 84 C26 81 36 87 50 84 C64 81 74 87 84 84" stroke="url(#goldGrad)" stroke-width="1.8" stroke-linecap="round" opacity="0.6" />
+          </svg>
+        </div>
+      </div>
+      <div class="intro-titles">
+        <h2 class="intro-title-en">BOAT RENT QATAR</h2>
+        <span class="intro-title-ar">تأجير قوارب قطر • الدوحة</span>
+        <div class="intro-loader-bar">
+          <div class="intro-loader-progress"></div>
+        </div>
+        <p class="intro-status-text">INITIALIZING 3D MARITIME EXPERIENCE...</p>
+      </div>
+      <button id="skip-intro-btn" class="skip-intro-btn">SKIP INTRO ➔</button>
+    </div>
+  </div>
+
+  <!-- Main 3D Interactive UI Shell -->
+  <main id="app-shell" class="app-shell">
+    
+    <!-- Top Luxury Navigation Bar -->
+    <header class="top-nav">
+      <!-- 3D Brand Emblem -->
+      <div class="brand-badge-wrapper" data-tilt>
+        <div class="brand-emblem-glow"></div>
+        <div class="brand-emblem">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="mini-crest-svg">
+            <path d="M50 14 C52 28 66 42 76 46 C60 48 52 44 50 14 Z" fill="url(#goldGrad)" />
+            <path d="M47 18 C45 32 30 46 18 48 C34 50 44 44 47 18 Z" fill="url(#goldGrad)" opacity="0.8" />
+            <path d="M14 52 C32 52 68 52 86 52 C76 68 58 74 50 74 C42 74 24 68 14 52 Z" fill="url(#goldGrad)" />
+          </svg>
+        </div>
+        <div class="brand-text-col">
+          <span class="brand-en">BOAT RENT QATAR</span>
+          <span class="brand-ar">تأجير قوارب قطر • DHOW</span>
+        </div>
+      </div>
+
+      <!-- Google Business Trust Badge -->
+      <a href="https://maps.google.com/?q=Boat+rent+Qatar+dhow+Doha" target="_blank" rel="noopener noreferrer" class="google-trust-badge" title="Verified on Google Business">
+        <div class="google-icon-box">
+          <svg viewBox="0 0 24 24" class="google-g-svg">
+            <path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.6l3.1-3.1C17.3 1.7 14.8 1 12 1 7.4 1 3.5 3.6 1.6 7.4l3.7 2.9C6.2 7.3 8.9 5 12 5z"/>
+            <path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.8z"/>
+            <path fill="#FBBC05" d="M5.3 14.7c-.2-.7-.4-1.5-.4-2.7s.1-2 .4-2.7L1.6 6.4C.6 8.4 0 10.1 0 12s.6 3.6 1.6 5.6l3.7-2.9z"/>
+            <path fill="#34A853" d="M12 23c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3.1 0-5.8-2.3-6.7-5.3L1.6 16c1.9 3.8 5.8 7 10.4 7z"/>
+          </svg>
+        </div>
+        <div class="rating-info">
+          <div class="stars-row">
+            <span class="rating-score">5.0</span>
+            <span class="stars">★★★★★</span>
+          </div>
+          <span class="reviews-count">149 Google Reviews • Doha</span>
+        </div>
+      </a>
+
+      <!-- Quick Audio & Contact Controls -->
+      <div class="nav-actions">
+        <button id="audio-toggle" class="audio-toggle-btn" aria-label="Toggle Ocean Soundscape" title="Toggle Gulf Soundscape">
+          <div class="audio-bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <span class="audio-label">OCEAN AUDIO</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Central 3D Stage / Hero Content -->
+    <section class="hero-stage">
+      <div class="stage-3d-card" data-tilt>
+        <!-- Status Pill -->
+        <div class="status-pill">
+          <span class="pulse-radar"></span>
+          <span class="status-text">ANCHORED FOR UPGRADE • LAUNCHING SOON</span>
+        </div>
+
+        <!-- Headline & Arabic Calligraphy Accent -->
+        <div class="headline-block">
+          <h1 class="main-headline">
+            <span class="text-gold-gradient">CHARTING NEW</span>
+            <span class="text-white-glow">HORIZONS</span>
+          </h1>
+          <p class="arabic-subtext">تجربة تأجير القوارب واليخوت الفاخرة في مياه الدوحة قريباً بحلتها الجديدة</p>
+          <p class="minimal-subline">Doha's premier luxury dhow booking experience is preparing to set sail.</p>
+        </div>
+
+        <!-- 3D Digital Countdown Gauge Array (Decreasing from Now to 7 Days) -->
+        <div class="countdown-container" id="countdown">
+          
+          <!-- Days -->
+          <div class="countdown-unit-card" data-tilt>
+            <div class="unit-circle-wrapper">
+              <svg class="progress-ring" width="100" height="100">
+                <circle class="ring-bg" stroke="rgba(212,175,55,0.12)" stroke-width="4" fill="transparent" r="42" cx="50" cy="50"/>
+                <circle id="ring-days" class="ring-fill" stroke="url(#goldGradRing)" stroke-width="4" stroke-dasharray="263.89" stroke-dashoffset="0" fill="transparent" r="42" cx="50" cy="50"/>
+                <defs>
+                  <linearGradient id="goldGradRing" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFF2B2"/>
+                    <stop offset="100%" stop-color="#D4AF37"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="unit-content">
+                <span class="unit-val" id="val-days">07</span>
+                <span class="unit-label">DAYS</span>
+              </div>
+            </div>
+            <div class="unit-sheen"></div>
+          </div>
+
+          <div class="countdown-separator">:</div>
+
+          <!-- Hours -->
+          <div class="countdown-unit-card" data-tilt>
+            <div class="unit-circle-wrapper">
+              <svg class="progress-ring" width="100" height="100">
+                <circle class="ring-bg" stroke="rgba(212,175,55,0.12)" stroke-width="4" fill="transparent" r="42" cx="50" cy="50"/>
+                <circle id="ring-hours" class="ring-fill" stroke="url(#goldGradRing)" stroke-width="4" stroke-dasharray="263.89" stroke-dashoffset="50" fill="transparent" r="42" cx="50" cy="50"/>
+              </svg>
+              <div class="unit-content">
+                <span class="unit-val" id="val-hours">00</span>
+                <span class="unit-label">HOURS</span>
+              </div>
+            </div>
+            <div class="unit-sheen"></div>
+          </div>
+
+          <div class="countdown-separator">:</div>
+
+          <!-- Minutes -->
+          <div class="countdown-unit-card" data-tilt>
+            <div class="unit-circle-wrapper">
+              <svg class="progress-ring" width="100" height="100">
+                <circle class="ring-bg" stroke="rgba(212,175,55,0.12)" stroke-width="4" fill="transparent" r="42" cx="50" cy="50"/>
+                <circle id="ring-minutes" class="ring-fill" stroke="url(#goldGradRing)" stroke-width="4" stroke-dasharray="263.89" stroke-dashoffset="100" fill="transparent" r="42" cx="50" cy="50"/>
+              </svg>
+              <div class="unit-content">
+                <span class="unit-val" id="val-minutes">00</span>
+                <span class="unit-label">MINUTES</span>
+              </div>
+            </div>
+            <div class="unit-sheen"></div>
+          </div>
+
+          <div class="countdown-separator">:</div>
+
+          <!-- Seconds -->
+          <div class="countdown-unit-card seconds-card" data-tilt>
+            <div class="unit-circle-wrapper">
+              <svg class="progress-ring" width="100" height="100">
+                <circle class="ring-bg" stroke="rgba(212,175,55,0.12)" stroke-width="4" fill="transparent" r="42" cx="50" cy="50"/>
+                <circle id="ring-seconds" class="ring-fill glow-seconds" stroke="url(#goldGradRing)" stroke-width="4" stroke-dasharray="263.89" stroke-dashoffset="150" fill="transparent" r="42" cx="50" cy="50"/>
+              </svg>
+              <div class="unit-content">
+                <span class="unit-val pulse-val" id="val-seconds">00</span>
+                <span class="unit-label">SECONDS</span>
+              </div>
+            </div>
+            <div class="unit-sheen"></div>
+          </div>
+
+        </div>
+
+        <!-- High-frequency Millisecond Progress Bar -->
+        <div class="ms-progress-wrapper">
+          <div class="ms-bar" id="ms-bar"></div>
+        </div>
+
+        <!-- Direct Contact & Priority Action Dock -->
+        <div class="action-dock">
+          <!-- WhatsApp Direct Booking -->
+          <a href="https://wa.me/97455000000?text=Hello%20Boat%20Rent%20Qatar%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20luxury%20dhow%20cruise." target="_blank" rel="noopener noreferrer" class="dock-btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" class="btn-icon" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.8 14.15c-.24.67-1.39 1.29-1.92 1.37-.5.08-1.15.12-3.7-0.94-3.26-1.35-5.35-4.66-5.51-4.88-.16-.22-1.32-1.75-1.32-3.34 0-1.59.83-2.37 1.13-2.7.3-.33.65-.41.87-.41.22 0 .43.01.62.02.2.01.47-.08.73.55.26.65.91 2.22.99 2.38.08.16.14.36.03.58-.11.22-.17.36-.33.55-.16.19-.35.43-.5.58-.16.16-.33.34-.14.67.19.33.84 1.38 1.8 2.24 1.24 1.1 2.28 1.44 2.61 1.6.33.16.52.14.71-.08.19-.22.82-.96 1.04-1.29.22-.33.44-.27.74-.16.3.11 1.91.9 2.24 1.06.33.16.55.25.63.39.08.14.08.81-.16 1.48z"/>
+            </svg>
+            <span>BOOK VIA WHATSAPP</span>
+          </a>
+
+          <!-- Location & Directions -->
+          <a href="https://maps.google.com/?q=Bandar+Skyview+Point+Dhow+Harbour+Al+Corniche+Doha+Qatar" target="_blank" rel="noopener noreferrer" class="dock-btn btn-secondary">
+            <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+            <span>DOWNTOWN CORNICHE</span>
+          </a>
+
+          <!-- VIP Notify Me -->
+          <button id="open-notify-modal" class="dock-btn btn-gold">
+            <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </svg>
+            <span>GET VIP ACCESS</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom Marine Footer -->
+    <footer class="bottom-bar">
+      <div class="location-badge">
+        <span class="pin-icon">⚓</span>
+        <span>Bandar Skyview Point, Dhow Harbour, Al Corniche, Doha, Qatar</span>
+      </div>
+      <div class="features-badge">
+        <span>Sunset Cruises</span> • <span>Private Charters</span> • <span>Doha Skyline Views</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- VIP Priority Access Modal -->
+  <div id="notify-modal" class="modal-backdrop">
+    <div class="modal-card" data-tilt>
+      <button id="close-notify-modal" class="modal-close-btn">&times;</button>
+      <div class="modal-header">
+        <div class="modal-icon">⚓</div>
+        <h3 class="modal-title">BE FIRST ON BOARD</h3>
+        <p class="modal-desc">Receive exclusive launch invitation & 15% VIP inaugural cruise discount.</p>
+      </div>
+      <form id="notify-form" class="modal-form">
+        <div class="form-group">
+          <input type="email" id="vip-email" placeholder="Enter your email address" required class="form-input" />
+        </div>
+        <div class="form-group">
+          <input type="tel" id="vip-phone" placeholder="WhatsApp / Phone Number (Optional)" class="form-input" />
+        </div>
+        <button type="submit" class="submit-vip-btn">
+          <span>CLAIM VIP INVITATION</span>
+          <span class="btn-arrow">➔</span>
+        </button>
+      </form>
+      <div id="form-feedback" class="form-feedback"></div>
+    </div>
+  </div>
+
+  <!-- Interactive 3D Cursor Follower Glow -->
+  <div id="cursor-glow" class="cursor-glow"></div>
+
+  <!-- Application Module Script -->
+</body>
+</html>
