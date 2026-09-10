@@ -1,306 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Boat Rent Qatar Dhow • We Are Setting Sail Soon</title>
-  <meta name="description" content="Boat Rent Qatar Dhow - Premier luxury cruise and dhow boat rentals in Doha, Qatar. Site currently undergoing upgrades. Launching in 7 days." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Boat Rent Qatar • Al Bandar Boat Rentals Doha | Luxury Cruisers, Dhows & Speedboats</title>
   
-  <!-- Favicon & Brand Icons -->
+  <meta name="description" content="Al Bandar Boat Rentals Doha, Qatar. Premier luxury AC cruisers, authentic traditional Qatari dhows, and high-speed sport boats. Safliya Island tours, skyline sunset dining, deep sea fishing & birthday parties. WhatsApp +974 3321 4896." />
+  <meta name="keywords" content="boat rent qatar, al bandar boat rentals, dhow rental doha, safliya island tour, luxury yacht charter qatar, fishing trip doha, doha skyline cruise" />
+  <meta name="author" content="Al Bandar Boat Rentals" />
+  <meta name="theme-color" content="#061A2E" />
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Al Bandar Boat Rentals Doha • Luxury Boat & Dhow Charters" />
+  <meta property="og:description" content="Experience Qatar from the Arabian Gulf. Luxury AC cruisers, traditional wooden dhows, and island beach excursions in Doha." />
+  <meta property="og:image" content="background.jpeg" />
+  <meta property="og:url" content="https://boatrentqatar.com/" />
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="./assets/logo-rPOt2qa6.png" />
   <link rel="apple-touch-icon" href="./assets/logo-rPOt2qa6.png" />
-  
-  <!-- Premium Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Import Map for Standalone & CDN Fallback -->
 
+  <!-- Google Fonts: Cinzel, Outfit, Noto Naskh Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Noto+Naskh+Arabic:wght@500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <script type="importmap">
-  {
-    "imports": {
-      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
-    }
-  }
-  </script>
-  <script type="module" crossorigin src="./assets/index-BbVBNBN-.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-B3E9altp.css">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script type="module" crossorigin src="./assets/index-DZ6aOSW7.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BK0qmJ2n.css">
 </head>
 <body>
-  <!-- WebGL 3D Canvas Layer -->
-  <div id="webgl-container">
-    <canvas id="three-canvas"></canvas>
-  </div>
-
-  <!-- Cinematic 3D Intro Opening Overlay -->
-  <div id="intro-overlay" class="intro-overlay">
-    <div class="intro-backdrop"></div>
-    <div class="intro-center">
-      <!-- 3D Holographic Compass & Official Logo -->
-      <div class="intro-crest">
-        <div class="compass-ring compass-outer"></div>
-        <div class="compass-ring compass-inner"></div>
-        <div class="crest-icon">
-          <img src="./assets/logo-rPOt2qa6.png" alt="Boat Rent Qatar Dhow Logo" class="intro-logo-img" />
-        </div>
-      </div>
-      <div class="intro-titles">
-        <h2 class="intro-title-en">BOAT RENT QATAR</h2>
-        <span class="intro-title-ar">تأجير قوارب قطر • الدوحة</span>
-        <div class="intro-loader-bar">
-          <div class="intro-loader-progress"></div>
-        </div>
-        <p class="intro-status-text">INITIALIZING 3D MARITIME EXPERIENCE...</p>
-      </div>
-      <button id="skip-intro-btn" class="skip-intro-btn">SKIP INTRO ➔</button>
-    </div>
-  </div>
-
-  <!-- Main 3D Interactive UI Shell -->
-  <main id="app-shell" class="app-shell">
-    
-    <!-- Top Luxury Navigation Bar -->
-    <header class="top-nav">
-      <!-- 3D Brand Emblem -->
-      <div class="brand-badge-wrapper">
-        <div class="brand-emblem-glow"></div>
-        <div class="brand-emblem">
-          <img src="./assets/logo-rPOt2qa6.png" alt="Boat Rent Qatar" class="nav-brand-logo-img" />
-        </div>
-        <div class="brand-text-col">
-          <span class="brand-en">BOAT RENT QATAR</span>
-          <span class="brand-ar">تأجير قوارب قطر • DHOW</span>
-        </div>
-      </div>
-
-      <!-- Google Business Trust Badge -->
-      <a href="https://maps.google.com/?q=Boat+rent+Qatar+dhow+Doha" target="_blank" rel="noopener noreferrer" class="google-trust-badge" title="Verified on Google Business">
-        <div class="google-icon-box">
-          <svg viewBox="0 0 24 24" class="google-g-svg">
-            <path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.6l3.1-3.1C17.3 1.7 14.8 1 12 1 7.4 1 3.5 3.6 1.6 7.4l3.7 2.9C6.2 7.3 8.9 5 12 5z"/>
-            <path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.8z"/>
-            <path fill="#FBBC05" d="M5.3 14.7c-.2-.7-.4-1.5-.4-2.7s.1-2 .4-2.7L1.6 6.4C.6 8.4 0 10.1 0 12s.6 3.6 1.6 5.6l3.7-2.9z"/>
-            <path fill="#34A853" d="M12 23c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3.1 0-5.8-2.3-6.7-5.3L1.6 16c1.9 3.8 5.8 7 10.4 7z"/>
-          </svg>
-        </div>
-        <div class="rating-info">
-          <div class="stars-row">
-            <span class="rating-score">5.0</span>
-            <span class="stars">★★★★★</span>
-          </div>
-          <span class="reviews-count">149 Google Reviews • Doha</span>
-        </div>
-      </a>
-
-      <!-- Quick Audio & Contact Controls -->
-      <div class="nav-actions">
-        <button id="audio-toggle" class="audio-toggle-btn" aria-label="Toggle Ocean Soundscape" title="Toggle Gulf Soundscape">
-          <div class="audio-bars">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-          <span class="audio-label">OCEAN AUDIO</span>
-        </button>
-      </div>
-    </header>
-
-    <!-- Central 3D Stage / Hero Content -->
-    <section class="hero-stage">
-      <div class="stage-3d-card" data-tilt>
-        <!-- 3D Brand Medallion -->
-        <div class="hero-logo-container">
-          <div class="hero-logo-ring">
-            <img src="./assets/logo-rPOt2qa6.png" alt="Boat Rent Qatar Official Logo" class="hero-logo-img" />
-          </div>
-        </div>
-
-        <!-- Status Pill -->
-        <div class="status-pill">
-          <span class="pulse-radar"></span>
-          <span class="status-text">ANCHORED FOR UPGRADE • LAUNCHING SOON</span>
-        </div>
-
-        <!-- Headline & Arabic Calligraphy Accent -->
-        <div class="headline-block">
-          <h1 class="main-headline">
-            <span class="text-gold-gradient">CHARTING NEW</span>
-            <span class="text-white-glow">HORIZONS</span>
-          </h1>
-          <p class="arabic-subtext">تجربة تأجير القوارب واليخوت الفاخرة في مياه الدوحة قريباً بحلتها الجديدة</p>
-          <p class="minimal-subline">Doha's premier luxury dhow booking experience is preparing to set sail.</p>
-        </div>
-
-        <!-- 3D Digital Countdown Gauge Array (Decreasing from Now to 7 Days) -->
-        <div class="countdown-container" id="countdown">
-          
-          <!-- Days -->
-          <div class="countdown-unit-card">
-            <div class="unit-circle-wrapper">
-              <svg class="progress-ring" viewBox="0 0 100 100">
-                <circle class="ring-bg" stroke="rgba(212,175,55,0.12)" stroke-width="4" fill="transparent" r="42" cx="50" cy="50"/>
-                <circle id="ring-days" class="ring-fill" stroke="url(#goldGradRing)" stroke-width="4" stroke-dasharray="263.89" stroke-dashoffset="0" fill="transparent" r="42" cx="50" cy="50"/>
-                <defs>
-                  <linearGradient id="goldGradRing" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#FFF2B2"/>
-                    <stop offset="100%" stop-color="#D4AF37"/>
-                  </linearGradient>
-                </defs>
-              </svg>
-              <div class="unit-content">
-                <span class="unit-val" id="val-days">07</span>
-                <span class="unit-label">DAYS</span>
-              </div>
-            </div>
-            <div class="unit-sheen"></div>
-          </div>
-
-          <div class="countdown-separator">:</div>
-
-          <!-- Hours -->
-          <div class="countdown-unit-card">
-            <div class="unit-circle-wrapper">
-              <svg class="progress-ring" viewBox="0 0 100 100">
-                <circle class="ring-bg" stroke="rgba(212,175,55,0.12)" stroke-width="4" fill="transparent" r="42" cx="50" cy="50"/>
-                <circle id="ring-hours" class="ring-fill" stroke="url(#goldGradRing)" stroke-width="4" stroke-dasharray="263.89" stroke-dashoffset="50" fill="transparent" r="42" cx="50" cy="50"/>
-              </svg>
-              <div class="unit-content">
-                <span class="unit-val" id="val-hours">00</span>
-                <span class="unit-label">HOURS</span>
-              </div>
-            </div>
-            <div class="unit-sheen"></div>
-          </div>
-
-          <div class="countdown-separator">:</div>
-
-          <!-- Minutes -->
-          <div class="countdown-unit-card">
-            <div class="unit-circle-wrapper">
-              <svg class="progress-ring" viewBox="0 0 100 100">
-                <circle class="ring-bg" stroke="rgba(212,175,55,0.12)" stroke-width="4" fill="transparent" r="42" cx="50" cy="50"/>
-                <circle id="ring-minutes" class="ring-fill" stroke="url(#goldGradRing)" stroke-width="4" stroke-dasharray="263.89" stroke-dashoffset="100" fill="transparent" r="42" cx="50" cy="50"/>
-              </svg>
-              <div class="unit-content">
-                <span class="unit-val" id="val-minutes">00</span>
-                <span class="unit-label">MINUTES</span>
-              </div>
-            </div>
-            <div class="unit-sheen"></div>
-          </div>
-
-          <div class="countdown-separator">:</div>
-
-          <!-- Seconds -->
-          <div class="countdown-unit-card seconds-card">
-            <div class="unit-circle-wrapper">
-              <svg class="progress-ring" viewBox="0 0 100 100">
-                <circle class="ring-bg" stroke="rgba(212,175,55,0.12)" stroke-width="4" fill="transparent" r="42" cx="50" cy="50"/>
-                <circle id="ring-seconds" class="ring-fill glow-seconds" stroke="url(#goldGradRing)" stroke-width="4" stroke-dasharray="263.89" stroke-dashoffset="150" fill="transparent" r="42" cx="50" cy="50"/>
-              </svg>
-              <div class="unit-content">
-                <span class="unit-val pulse-val" id="val-seconds">00</span>
-                <span class="unit-label">SECONDS</span>
-              </div>
-            </div>
-            <div class="unit-sheen"></div>
-          </div>
-
-        </div>
-
-        <!-- High-frequency Millisecond Progress Bar -->
-        <div class="ms-progress-wrapper">
-          <div class="ms-bar" id="ms-bar"></div>
-        </div>
-
-        <!-- Direct Contact & Priority Action Dock -->
-        <div class="action-dock">
-          <!-- WhatsApp Direct Booking -->
-          <a href="https://wa.me/97471034962?text=Hello%20Boat%20Rent%20Qatar%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20luxury%20dhow%20cruise." target="_blank" rel="noopener noreferrer" class="dock-btn btn-whatsapp">
-            <svg viewBox="0 0 24 24" class="btn-icon" fill="currentColor">
-              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.8 14.15c-.24.67-1.39 1.29-1.92 1.37-.5.08-1.15.12-3.7-0.94-3.26-1.35-5.35-4.66-5.51-4.88-.16-.22-1.32-1.75-1.32-3.34 0-1.59.83-2.37 1.13-2.7.3-.33.65-.41.87-.41.22 0 .43.01.62.02.2.01.47-.08.73.55.26.65.91 2.22.99 2.38.08.16.14.36.03.58-.11.22-.17.36-.33.55-.16.19-.35.43-.5.58-.16.16-.33.34-.14.67.19.33.84 1.38 1.8 2.24 1.24 1.1 2.28 1.44 2.61 1.6.33.16.52.14.71-.08.19-.22.82-.96 1.04-1.29.22-.33.44-.27.74-.16.3.11 1.91.9 2.24 1.06.33.16.55.25.63.39.08.14.08.81-.16 1.48z"/>
-            </svg>
-            <span>WHATSAPP: +974 7103 4962</span>
-          </a>
-
-          <!-- Direct Phone Call -->
-          <a href="tel:+97471034962" class="dock-btn btn-call" title="Call Boat Rent Qatar">
-            <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-            <span>CALL US</span>
-          </a>
-
-          <!-- Location & Directions -->
-          <a href="https://maps.google.com/?q=Bandar+Skyview+Point+Dhow+Harbour+Al+Corniche+Doha+Qatar" target="_blank" rel="noopener noreferrer" class="dock-btn btn-secondary">
-            <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-              <circle cx="12" cy="9" r="2.5"/>
-            </svg>
-            <span>DOWNTOWN CORNICHE</span>
-          </a>
-
-          <!-- VIP Notify Me -->
-          <button id="open-notify-modal" class="dock-btn btn-gold">
-            <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
-              <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
-            </svg>
-            <span>GET VIP ACCESS</span>
-          </button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Bottom Marine Footer -->
-    <footer class="bottom-bar">
-      <div class="location-badge">
-        <span class="pin-icon">⚓</span>
-        <span>Bandar Skyview Point, Dhow Harbour, Al Corniche, Doha</span>
-      </div>
-      <a href="tel:+97471034962" class="footer-phone-badge">
-        <span>📞 +974 7103 4962</span>
-      </a>
-      <div class="features-badge">
-        <span>Sunset Cruises</span> • <span>Private Charters</span> • <span>Doha Skyline Views</span>
-      </div>
-    </footer>
-
-  </main>
-
-  <!-- VIP Priority Access Modal -->
-  <div id="notify-modal" class="modal-backdrop">
-    <div class="modal-card">
-      <button id="close-notify-modal" class="modal-close-btn">&times;</button>
-      <div class="modal-header">
-        <div class="modal-logo-box">
-          <img src="./assets/logo-rPOt2qa6.png" alt="Boat Rent Qatar Logo" class="modal-brand-logo-img" />
-        </div>
-        <h3 class="modal-title">BE FIRST ON BOARD</h3>
-        <p class="modal-desc">Receive exclusive launch invitation & 15% VIP inaugural cruise discount.</p>
-      </div>
-      <form id="notify-form" class="modal-form">
-        <div class="form-group">
-          <input type="email" id="vip-email" placeholder="Enter your email address" required class="form-input" />
-        </div>
-        <div class="form-group">
-          <input type="tel" id="vip-phone" placeholder="WhatsApp / Phone Number (Optional)" class="form-input" />
-        </div>
-        <button type="submit" class="submit-vip-btn">
-          <span>CLAIM VIP INVITATION</span>
-          <span class="btn-arrow">➔</span>
-        </button>
-      </form>
-      <div id="form-feedback" class="form-feedback"></div>
-    </div>
-  </div>
-
-  <!-- Interactive 3D Cursor Follower Glow -->
-  <div id="cursor-glow" class="cursor-glow"></div>
-
-  <!-- Application Module Script -->
+  <div id="app"></div>
 </body>
 </html>
